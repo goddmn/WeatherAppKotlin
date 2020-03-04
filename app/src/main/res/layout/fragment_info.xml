@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_info_fragment"
+    android:layout_margin="20dp"
+    tools:context=".ui.InfoFragment">
+
+    <ImageView
+        android:id="@+id/ic_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ellipse"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/ic_close"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/deg_txt"
+        android:text="+10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="58dp"
+        android:layout_alignTop="@+id/ic_weather"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-30dp"/>
+
+    <TextView
+        android:id="@+id/info_txt"
+        android:text="ясно"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/deg_txt"
+        android:layout_alignLeft="@id/deg_txt"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ic_weather_small"
+        android:src="@drawable/ic_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_txt"
+        android:layout_alignLeft="@id/info_txt"
+        android:layout_marginTop="48dp"/>
+
+    <TextView
+        android:id="@+id/humidity_txt"
+        android:text="65% влажности"
+        android:layout_alignTop="@id/ic_weather_small"
+        android:layout_toRightOf="@id/ic_weather_small"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
